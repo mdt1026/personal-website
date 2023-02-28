@@ -26,6 +26,7 @@ export default function Home({ allPostsData }) {
         <p>
           Hi, I'm <b>Matthew</b>.
           I'm a Cybersecurity student studying at Stevens Institute of Technology.
+          This site is current a <i>work-in-progress</i> project.
           Visit my{' '}
           <a href="https://github.com/mdt1026">GitHub</a> or{' '}
           <a href="https://matturner.com/linkedin">LinkedIn</a> profiles.

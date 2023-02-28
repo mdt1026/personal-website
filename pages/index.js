@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
           Hi, I'm <b>Matthew</b>.
           I'm a Cybersecurity student studying at Stevens Institute of Technology.
           Visit my{' '}
-          <a href="https://matturner.com">GitHub</a> or{' '}
+          <a href="https://github.com/mdt1026">GitHub</a> or{' '}
           <a href="https://matturner.com/linkedin">LinkedIn</a> profiles.
         </p>
         <p>

@@ -24,11 +24,11 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi, I'm <b>Matthew</b>.
-          I'm a Cybersecurity student studying at Stevens Institute of Technology.
+          Hi, I'm <b>Matt</b>.
+          I'm a 3/4 Cybersecurity student studying at Stevens Institute of Technology.
           This site is current a <i>work-in-progress</i> project.
-          Visit my{' '}
-          <a href="https://matturner.com/github">GitHub</a> or{' '}
+          Check out my{' '}
+          <a href="https://matturner.com/github">GitHub</a> and{' '}
           <a href="https://matturner.com/linkedin">LinkedIn</a> profiles.
         </p>
         <p>
@@ -37,7 +37,7 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Blog <code>[SAMPLE PAGES]</code></h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

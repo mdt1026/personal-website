@@ -31,10 +31,6 @@ export default function Home({ allPostsData }) {
           <a href="https://matturner.com/github">GitHub</a> and{' '}
           <a href="https://matturner.com/linkedin">LinkedIn</a> profiles.
         </p>
-        <p>
-          (This is a sample website - you'll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">Vercel's Next.js tutorial</a>.)
-        </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog <code>[SAMPLE PAGES]</code></h2>

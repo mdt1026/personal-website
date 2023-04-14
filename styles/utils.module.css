@@ -50,3 +50,8 @@
 .lightText {
   color: #060606;
 }
+
+.navbar {
+  background-color: #E5E9F0;
+  padding-bottom: 20px;
+}

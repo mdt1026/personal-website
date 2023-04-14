@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Date from '../../components/date';
 import Layout from '../../components/layout';
 
+import { Navbar } from '@nextui-org/react';
+
 import utilStyles from '../../styles/utils.module.css';
 
 import { getAllPostIds, getPostData } from '../../lib/posts';
@@ -30,6 +32,11 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
+      <Navbar isBordered variant="static">
+          <Navbar.Content activeColor="primary" enableCursorHighlight variant="underline">
+            <Navbar.Link href="/" >Home</Navbar.Link>
+          </Navbar.Content>
+      </Navbar>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>

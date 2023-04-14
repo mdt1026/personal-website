@@ -19,12 +19,15 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 img {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
+.navbar {
+  background-color: #E5E9F0;
+}

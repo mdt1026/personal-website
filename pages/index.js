@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
+import { Navbar } from '@nextui-org/react';
+
 import Date from '../components/date';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
@@ -22,6 +24,11 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <Navbar isBordered variant="static" containerCss={{ background: "$nord4" }}>
+        <Navbar.Content activeColor="primary" enableCursorHighlight variant="underline">
+          <Navbar.Link isActive href="/" >Home</Navbar.Link>
+        </Navbar.Content>
+      </Navbar>
       <section className={utilStyles.headingMd}>
         <p>
           Hi, I'm <b>Matt</b>.
@@ -33,7 +40,7 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog <code>[SAMPLE PAGES]</code></h2>
+        <h2 className={utilStyles.headingLg}>Blog [SAMPLE PAGES]</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

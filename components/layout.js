@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '@nextui-org/react';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
@@ -27,7 +26,6 @@ export default function Layout({ children, home }) {
         <meta property="og:title" content={siteTitle} />
         <meta property="og:description" content="I'm a cybersecurity student at Stevens Institute of Technology with interests in low-level programming and networks." />
       </Head>
-      <Navbar />
       <header className={styles.header}>
         {home ? (
           <>

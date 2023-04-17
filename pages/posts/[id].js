@@ -32,7 +32,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <Navbar isBordered variant="static">
+      <Navbar isBordered variant="static" containerCss={{ background: "$nord4" }}>
           <Navbar.Content activeColor="primary" enableCursorHighlight variant="underline">
             <Navbar.Link href="/" >Home</Navbar.Link>
           </Navbar.Content>

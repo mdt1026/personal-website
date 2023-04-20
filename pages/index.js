@@ -24,23 +24,19 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Navbar isBordered variant="static" containerCss={{ background: "$nord4" }}>
-        <Navbar.Content activeColor="primary" enableCursorHighlight variant="underline">
-          <Navbar.Link isActive href="/" >Home</Navbar.Link>
-        </Navbar.Content>
-      </Navbar>
+      <section className={utilStyles.heading1Xl}>
+        // Cybersecurity Undergraduate at Stevens Institute of Technology //
+      </section>
       <section className={utilStyles.headingMd}>
-        <p>
-          Hi, I'm <b>Matt</b>.
-          I'm a 3/4 Cybersecurity student studying at Stevens Institute of Technology.
-          This site is current a <i>work-in-progress</i> project.
-          Check out my{' '}
-          <a href="https://matturner.com/github">GitHub</a> and{' '}
-          <a href="https://matturner.com/linkedin">LinkedIn</a> profiles.
-        </p>
+          Hi, my name is <b>Matt Turner</b>.
+          I'm a 3/4 student currently studying for my bachelor's degree at Stevens Institute of Technology.
+          This site is currently a <i>work-in-progress</i> project.
+          Check out my
+          <a href="https://matturner.com/github"> GitHub</a> and
+          <a href="https://matturner.com/linkedin"> LinkedIn</a> profiles.
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog [SAMPLE PAGES]</h2>
+        <h2 className={utilStyles.headingLg}>// RECENT PROJECTS //</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

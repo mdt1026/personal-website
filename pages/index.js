@@ -25,11 +25,11 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.heading1Xl}>
-        // Cybersecurity Undergraduate at Stevens Institute of Technology //
+        // Cybersecurity Graduate at Stevens Institute of Technology //
       </section>
       <section className={utilStyles.headingMd}>
           Hi, my name is <b>Matt Turner</b>.
-          I'm a 3/4 student currently studying for my bachelor's degree at Stevens Institute of Technology.
+          I'm a 4/4 student currently studying for my Master's degree in Cybersecurity after earning my Bachelor's degree at Stevens Institute of Technology.
           This site is currently a <i>work-in-progress</i> project.
           Check out my
           <a href="https://matturner.com/github"> GitHub</a> and
@@ -37,6 +37,7 @@ export default function Home({ allPostsData }) {
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>// RECENT PROJECTS //</h2>
+        <!--
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -48,6 +49,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+        -->
       </section>
     </Layout>
   );
